@@ -24,14 +24,16 @@ def n_primos(x):
 limite = int(input("Limite máximo: "))
 n = 2
 
+contadorPrimos = 0 # Variavel que conta quantos numeros foram encontrados
 while n < limite:
     if n_primos(n):
         print(n, end=" ")
+        contadorPrimos = contadorPrimos + 1 # a cada loop que um numero for encontrado é somado mais um ao contador
 
     n = n + 1
 
 
-#print ("\n\nForam encontrados %d números primos." %p)
+print ("\n\nForam encontrados %d números primos." % contadorPrimos)
 
 
 
